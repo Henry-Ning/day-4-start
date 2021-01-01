@@ -1,12 +1,22 @@
-fruits = ["Apples", "Grapes"]
-vegetables = ["kale", "celery"]
-dirty_dozon = [fruits, vegetables]
+# 🚨 Don't change the code below 👇
+row1 = ["⬜️","⬜️","⬜️"]
+row2 = ["⬜️","⬜️","⬜️"]
+row3 = ["⬜️","⬜️","⬜️"]
+map = [row1, row2, row3]
+print(f"{row1}\n{row2}\n{row3}")
+position = input("Where do you want to put the treasure? ")
+# 🚨 Don't change the code above 👆
 
-print(dirty_dozon)
+#Write your code below this row 👇
+row_number = int(position[0]) -1
+column_number = int(position[1]) -1  
 
-# What you knowThese are questions you got right on the first try.
-# Given the following list:fruits = ["Strawberries", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears"]Which line of code will give you "Apples"?
-# Given the code below:fruits = ["Strawberries", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears"] fruits[-1] = "Melons" fruits.append("Lemons") print(fruits)What do you think will be printed?
-# What you should review
-# Given the code below:fruits = ["Strawberries", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears"] vegetables = ["Spinach", "Kale", "Tomatoes", "Celery", "Potatoes"] dirty_dozen = [fruits, vegetables] print(dirty_dozen[1][1])What will be printed?
-# Lecture 43 IndexErrors and Working with Nested Lists
+map[row_number][column_number] = 'x'
+
+
+
+
+#Write your code above this row 👆
+
+# 🚨 Don't change the code below 👇
+print(f"{row1}\n{row2}\n{row3}")
